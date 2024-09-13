@@ -4,11 +4,23 @@
     padding: 0;
 }
 
+main {margin: 30px 140px;}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+p, h1, h2, h3 {color: #2D2746;}
+
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #5E1858;
+    height: 65px;
+    align-items: center;
+    padding: 0px 140px;
 }
 
 .logo a {
@@ -26,11 +38,6 @@ nav {
     margin: 0px 16px;
 }
 
-.container {
-    /*width: 1000px;*/
-    margin: auto;
-}
-
 .upper {
     display: flex;
     flex-direction: row;
@@ -38,17 +45,55 @@ nav {
 }
 
 .u-text {
-    padding-left: 24px;
+    padding-left: 25px;
 }
 
 .u-text h1 {
     font-size: 30px;
     font-weight: 700;
-    color: #2D2746;
+    padding-bottom: 10px;
 }
 
 .u-text p {
     font-size: 18px;
     font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.u-text p:last-child {
+    padding-bottom: 0px;
+}
+
+.u-img img {
+    width: 950px;
+    height: auto;
+}
+
+.middle {
+    padding: 60px 0px;
+}
+
+.middle-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #EBEAFA;
+    padding: 15px;
+    width: 300px;
 }
 
