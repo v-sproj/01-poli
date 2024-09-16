@@ -104,6 +104,25 @@ footer {
     width: 280px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 600px) {
+    .upper {
+        flex-direction: column;
+    }
 
+    .upper img {
+        padding-bottom: 20px;
+    }
+    
+    .u-text {
+        padding-left: 0px;
+    }
+    
+    .middle-cards {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
 }
