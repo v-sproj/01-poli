@@ -6,7 +6,6 @@
 
 .container {
     width: 1000px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -104,19 +103,43 @@ footer {
     width: 280px;
 }
 
+.gallery {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    gap: 15px;
+}
+
+.padding-left {
+    padding-left: 15px;
+}
+
 @media screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
     .upper {
         flex-direction: column;
     }
 
     .upper img {
         padding-bottom: 20px;
+        width: 100%;
     }
-    
+
     .u-text {
         padding-left: 0px;
     }
-    
+
     .middle-cards {
         flex-direction: column;
         padding-top: 0px;
@@ -124,5 +147,32 @@ footer {
 
     .card {
         margin-top: 20px;
+        width: 300px;
     }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-box {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .gallery-section img {
+        width: 100%;
+    }
+
+    .padding-left {
+        padding-left: 0px;
+    }
+
+    .gallery {
+        gap: 0px;
+    }
+
+    .gallery-item {
+        padding: 5px 0px;
+    }
+
 }
